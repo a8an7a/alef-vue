@@ -1,0 +1,172 @@
+@import 'reset';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+$a-font: 'Montserrat', sans-serif;
+
+$a-colors-black: #111111;
+$a-colors-gray: #1111117a;
+$a-colors-gray-light: #F1F1F1;
+$a-colors-gray-medium: #F2F2F2;
+$a-colors-primary: #01A7FD;
+
+body {
+    font-family: $a-font;
+}
+
+.a-link {
+    font: {
+        size: 14px;
+        weight: 400;
+    }
+
+    line-height: 24px;
+    text-decoration: none;
+
+    &_nav {
+        color: $a-colors-gray;
+    }
+
+    &_action {
+        color: $a-colors-primary;
+    }
+}
+
+.a-heading {
+    padding-bottom: 20px;
+
+    font: {
+        size: 16px;
+        weight: 500;
+    }
+
+    line-height: 24px;
+    color: $a-colors-black;
+}
+
+.a-text-regular {
+    font: {
+        size: 14px;
+        weight: 400;
+    }
+
+    line-height: 24px;
+    color: $a-colors-black;
+}
+
+.a-text-bold {
+    font: {
+        size: 16px;
+        weight: 700;
+    }
+
+    line-height: 24px;
+    color: $a-colors-black;
+}
+
+.a-label {
+    padding-bottom: 2px;
+
+    font: {
+        size: 13px;
+        weight: 400;
+    }
+
+    line-height: 16px;
+    color: $a-colors-gray;
+}
+
+.a-button {
+    padding: 10px 20px;
+
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    border: 2px solid $a-colors-primary;
+    
+    outline: none;
+
+    &_primary {
+        color: #FFFFFF;
+        background-color: $a-colors-primary;
+    }
+}
+
+.a-badges {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: $a-colors-gray-light;
+}
+
+.container {
+    position: relative;
+
+    height: 100%;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 76px;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0px 1px 0px rgba(17, 17, 17, 0.1);
+
+    &__cover {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        max-width: 1366px;
+
+        margin: 0 auto;
+    }
+
+    &__logo {
+        position: absolute;
+        left: 0;
+        
+        padding: 0 41px;
+    }
+
+    &__nav > a:first-child {
+        margin-right: 24px;
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 76px;
+    background-color: $a-colors-gray-medium;
+    box-shadow: 0px 1px 0px rgba(17, 17, 17, 0.1);
+
+    &__content {
+        font: {
+            size: 13px;
+            weight: 400;
+        }
+    
+        line-height: 16px;
+        color: #000000;
+    }
+}
+
+.main {
+    width: 100%;
+    max-width: 616px;
+
+    margin: 0 auto;
+}
