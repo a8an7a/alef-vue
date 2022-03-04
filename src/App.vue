@@ -3,7 +3,7 @@
         <div class="header">
             <div class="header__cover">
                 <div class="header__logo">
-                    <img src="./assets/alef-logo.svg" alt="alef-logo">
+                    <img src="./assets/alef-logo.svg" alt="alef-logo" />
                 </div>
                 <div class="header__nav">
                     <router-link class="a-link a-link_nav" to="/">Форма</router-link>

@@ -15,7 +15,7 @@
             <div class="forms__item children-data">
                 <div class="forms__header a-mb-10">
                     <p class="a-heading">Дети (макс. 5)</p>
-                    <button class="a-button">
+                    <button class="a-button a-button_secondary">
                         <img class="a-mr-5" :src="iconPlus24" alt="icon-plus">
                         <span>Добавить ребенка</span>
                     </button>
@@ -42,7 +42,7 @@
                     </div>
                     <a href="" class="a-link a-link_action">Удалить</a>
                 </div>
-                <button class="a-button a-button_primary a-mt-30">Сохранить</button>
+                <button class="a-button a-button_primary a-mt-30 a-mb-100">Сохранить</button>
             </div>
         </form>
     </div>

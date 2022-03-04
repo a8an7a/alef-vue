@@ -22,14 +22,34 @@ body {
 
     line-height: 24px;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
 
     &_nav {
         color: $a-colors-gray;
+        padding-bottom: 30px;
+
+        &:hover {
+            box-shadow: inset 0px -2px 0px #1111117A;
+        }
     }
 
     &_action {
         color: $a-colors-primary;
+
+        &:hover {
+            box-shadow: inset 0px -2px 0px #01A7FD;
+        }
     }
+}
+
+.router-link-active {
+    font: {
+        size: 16px;
+        weight: 500;
+    }
+
+    color: $a-colors-black;
+    box-shadow: inset 0px -2px 0px #01A7FD !important;
 }
 
 .a-heading {
@@ -86,18 +106,31 @@ body {
     }
 
     line-height: 24px;
-    color: $a-colors-primary;
 
     border-radius: 100px;
     background-color: #FFFFFF;
     border: 2px solid $a-colors-primary;
+    transition: all 0.2s ease-in-out;
     
     outline: none;
     cursor: pointer;
 
+    &_secondary {
+        color: $a-colors-primary;
+
+        &:hover {
+            background-color: #6E41E20A;
+        }
+    }
+
     &_primary {
+        border: none;
         color: #FFFFFF;
         background-color: $a-colors-primary;
+
+        &:hover {
+            background-color: #2AB5FD;
+        }
     }
 }
 
@@ -139,11 +172,17 @@ body {
     margin-bottom: 60px;
 }
 
+.a-mb-100 {
+    margin-bottom: 100px;
+}
+
 .container {
     position: relative;
 
     height: 100%;
     min-height: 100vh;
+
+    overflow: auto;
 }
 
 .header {
@@ -155,7 +194,7 @@ body {
 
     margin-bottom: 30px;
 
-    box-shadow: 0px 1px 0px rgba(17, 17, 17, 0.1);
+    box-shadow: 0px 1px 0px #1111111A;
 
     &__cover {
         position: relative;
@@ -192,8 +231,10 @@ body {
 
     width: 100%;
     height: 76px;
+    margin-top: 20px;
+
     background-color: $a-colors-gray-medium;
-    box-shadow: 0px 1px 0px rgba(17, 17, 17, 0.1);
+    box-shadow: 0px 1px 0px #1111111A;
 
     &__content {
         font: {
@@ -238,5 +279,11 @@ body {
 
     &_short {
         width: 260px;
+    }
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 10px rgba(51, 51, 51, 0.16);
     }
 }
