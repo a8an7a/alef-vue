@@ -33,8 +33,6 @@ body {
 }
 
 .a-heading {
-    padding-bottom: 20px;
-
     font: {
         size: 16px;
         weight: 500;
@@ -77,13 +75,25 @@ body {
 }
 
 .a-button {
+    display: flex;
+    align-items: center;
+
     padding: 10px 20px;
+
+    font: {
+        size: 14px;
+        weight: 400px;
+    }
+
+    line-height: 24px;
+    color: $a-colors-primary;
 
     border-radius: 100px;
     background-color: #FFFFFF;
     border: 2px solid $a-colors-primary;
     
     outline: none;
+    cursor: pointer;
 
     &_primary {
         color: #FFFFFF;
@@ -92,9 +102,41 @@ body {
 }
 
 .a-badges {
+    display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
     background-color: $a-colors-gray-light;
+}
+
+.a-input {
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.a-mr-5 {
+    margin-right: 5px;
+}
+
+.a-mr-18 {
+    margin-right: 18px;
+}
+
+.a-mt-30 {
+    margin-top: 30px;
+}
+
+.a-mb-10 {
+    margin-bottom: 10px;
+}
+
+.a-mb-20 {
+    margin-bottom: 20px;
+}
+
+.a-mb-60 {
+    margin-bottom: 60px;
 }
 
 .container {
@@ -169,4 +211,32 @@ body {
     max-width: 616px;
 
     margin: 0 auto;
+}
+
+.forms {
+
+    &__item {
+        margin-bottom: 33px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.input__field {
+    padding: 8px 16px 6px;
+    border-radius: 4px;
+    border: 1px solid $a-colors-gray-light;
+
+    &_short {
+        width: 260px;
+    }
 }
