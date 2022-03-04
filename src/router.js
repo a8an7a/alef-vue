@@ -5,8 +5,8 @@ import PreviewVue from '@/view/PreviewVue'
 
 export const router = new createRouter({
     history: createWebHistory(),
-    // base: '/alef-vue/'
-    base: '/',
+    // base: '/',
+    base: '/alef-vue/',
     routes: [
         {
             path: '/',
